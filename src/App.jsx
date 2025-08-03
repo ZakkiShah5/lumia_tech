@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import Who from './pages/Who'
+import WhatWeDo from './pages/WhatWeDo'
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/whoweare' element={<Who/>} />
+        <Route path='/whatwedo' element={<WhatWeDo />} />
       </Routes>
       <Footer />
     </div>

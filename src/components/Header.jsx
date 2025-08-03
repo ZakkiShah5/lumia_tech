@@ -52,7 +52,7 @@ const Header = ({headerbg}) => {
         <div className='flex flex-col md:justify-center md:px-4 md:text-4xl gap-4 py-20'>
           <Link className='link' to='/' onClick={toggleMenu}>Home</Link>
           <Link className='link' to='/whoweare' onClick={toggleMenu}>Who We Are</Link>
-          <Link className='link' to='/' onClick={toggleMenu}>What We Do</Link>
+          <Link className='link' to='/whatwedo' onClick={toggleMenu}>What We Do</Link>
           <Link className='link' to='/' onClick={toggleMenu}>Our Partners</Link>
           <Link className='link' to='/' onClick={toggleMenu}>Careers at Lumia</Link>
           <Link className='link' to='/' onClick={toggleMenu}>Get in Touch</Link>
