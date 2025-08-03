@@ -5,6 +5,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Footer from './components/Footer'
+import Who from './pages/Who'
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
     <div className=''>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/whoweare' element={<Who/>} />
       </Routes>
       <Footer />
     </div>

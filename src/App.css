@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -42,4 +46,20 @@ body {
 }
 .link:hover::after {
   width: 100%;
+}
+
+.after-title{
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.after-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 35px;
+  background-color: #2E8B57;
 }
