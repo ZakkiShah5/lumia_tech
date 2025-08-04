@@ -46,14 +46,14 @@ const Header = ({headerbg}) => {
       {/* Expandable Menu */}
       <div
         className={`overflow-hidden transition-all duration-200 ease-in-out bg-[#2E8B57] text-white text-lg ${
-          menuOpen ? 'max-h-[600px] py-4 px-2' : 'max-h-0'
+          menuOpen ? 'md:min-h-screen py-4 px-2' : 'max-h-0'
         }`}
       >
-        <div className='flex flex-col md:justify-center md:px-4 md:text-4xl gap-4 py-20'>
+        <div className='flex flex-col md:justify-center md:px-4 md:text-4xl gap-4 pl-5  md:py-20'>
           <Link className='link' to='/' onClick={toggleMenu}>Home</Link>
           <Link className='link' to='/whoweare' onClick={toggleMenu}>Who We Are</Link>
           <Link className='link' to='/whatwedo' onClick={toggleMenu}>What We Do</Link>
-          <Link className='link' to='/' onClick={toggleMenu}>Our Partners</Link>
+          <Link className='link' to='/partners' onClick={toggleMenu}>Our Partners</Link>
           <Link className='link' to='/' onClick={toggleMenu}>Careers at Lumia</Link>
           <Link className='link' to='/' onClick={toggleMenu}>Get in Touch</Link>
         </div>

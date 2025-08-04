@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Footer from './components/Footer'
 import Who from './pages/Who'
 import WhatWeDo from './pages/WhatWeDo'
+import Partners from './pages/Partners'
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/whoweare' element={<Who/>} />
         <Route path='/whatwedo' element={<WhatWeDo />} />
+        <Route path='/partners' element={<Partners />} />
       </Routes>
       <Footer />
     </div>
