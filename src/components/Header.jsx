@@ -54,8 +54,8 @@ const Header = ({headerbg}) => {
           <Link className='link' to='/whoweare' onClick={toggleMenu}>Who We Are</Link>
           <Link className='link' to='/whatwedo' onClick={toggleMenu}>What We Do</Link>
           <Link className='link' to='/partners' onClick={toggleMenu}>Our Partners</Link>
-          <Link className='link' to='/' onClick={toggleMenu}>Careers at Lumia</Link>
-          <Link className='link' to='/' onClick={toggleMenu}>Get in Touch</Link>
+          <Link className='link' to='/careers' onClick={toggleMenu}>Careers at Lumia</Link>
+          <Link className='link' to='/contact' onClick={toggleMenu}>Get in Touch</Link>
         </div>
       </div>
     </div>

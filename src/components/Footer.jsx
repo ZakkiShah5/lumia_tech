@@ -38,12 +38,12 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className='hover:underline'>
+              <Link to='/careers' className='hover:underline'>
                 Careers
               </Link>
             </li>
             <li>
-              <Link to='/' className='hover:underline'>
+              <Link to='/contact' className='hover:underline'>
                 Get in Touch
               </Link>
             </li>

@@ -75,6 +75,18 @@ body {
   height: 3px;
   background-color: #2E8B57;
 }
+.lil-bord {
+  position: relative;
+  padding-bottom: 5px;
+}
+.lil-bord::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #2E8B57;
+}
 .img-shade, .img-shade-right,.img-shade-left {
   position: relative;
 }

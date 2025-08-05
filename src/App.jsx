@@ -8,6 +8,8 @@ import Footer from './components/Footer'
 import Who from './pages/Who'
 import WhatWeDo from './pages/WhatWeDo'
 import Partners from './pages/Partners'
+import Careers from './pages/Careers'
+import Contact from './components/Contact'
 
 const App = () => {
   useEffect(() => {
@@ -24,6 +26,8 @@ const App = () => {
         <Route path='/whoweare' element={<Who/>} />
         <Route path='/whatwedo' element={<WhatWeDo />} />
         <Route path='/partners' element={<Partners />} />
+        <Route path='/careers' element={<Careers />} /> 
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </div>
