@@ -1,5 +1,5 @@
 import React from 'react'
-import bgvideo from '../assets/bgvids/services.mp4'
+import bgvideo from '../assets/bgvids/robo.mp4'
 
 const ServicesHero = () => {
   return (
@@ -28,8 +28,7 @@ const ServicesHero = () => {
           data-aos-duration='1000'
           className='text-2xl md:text-2xl max-w-2xl text-left ml-4'
         >
-          Driving digital innovation to shape smarter cities, cleaner energy,
-          and a resilient future.
+          Drive Innovation. Power Sustainability. Enable Intelligence.
         </p>
         <button
           data-aos='fade-up-left'

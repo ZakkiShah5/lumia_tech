@@ -23,13 +23,18 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className='hover:underline'>
+              <Link to='/whoweare' className='hover:underline'>
                 Who We Are
               </Link>
             </li>
             <li>
-              <Link to='/' className='hover:underline'>
+              <Link to='/whatwedo' className='hover:underline'>
                 What We Do
+              </Link>
+            </li>
+            <li>
+              <Link to='/partners' className='hover:underline'>
+                Our Partners
               </Link>
             </li>
             <li>
@@ -51,7 +56,7 @@ const Footer = () => {
           <p className='mb-1'>Graz 8020, Austria</p>
           <p className='mt-3'>
             Email:{' '}
-            <a href='mailto:team@lumiatech-group.com' className='underline'>
+            <a href='mailto:team@lumiatech-group.com' className=''>
               team@lumiatech-group.com
             </a>
           </p>
