@@ -28,11 +28,16 @@ const WhoHero = () => {
           data-aos-duration='1000'
           className='text-2xl md:text-2xl max-w-2xl text-left ml-4'
         >
-          Driven by Innovation. Powered by People. <br /> Built on Partnership.
+          Create Across Cultures. Empower Every Voice. <br /> Deliver Impact.
         </p>
-        <button data-aos='fade-up-left'
+        <button
+          data-aos='fade-up-left'
           data-aos-easing='linear'
-          data-aos-duration='1000' className='ml-4 mt-5 font-semibold cursor-pointer px-4 py-2 bg-[#A3D9A5] duration-200 text-black translate-y-1.5 hover:text-white hover:bg-[#2E8B57]'><a href="#who">Read More...</a></button>
+          data-aos-duration='1000'
+          className='ml-4 mt-5 font-semibold cursor-pointer px-4 py-2 bg-[#A3D9A5] duration-200 text-black translate-y-1.5 hover:text-white hover:bg-[#2E8B57]'
+        >
+          <a href='#who'>Read More...</a>
+        </button>
       </div>
     </div>
   )

@@ -1,7 +1,6 @@
 // ContactPage.jsx
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import Header from './Header'
 import { FaEnvelope } from "react-icons/fa";
 import { IoIosPin } from "react-icons/io";
 
@@ -27,8 +26,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header />
-      <div className='min-h-screen bg-[#2E8B57] py-16 px-4 sm:px-6 lg:px-8'>
+      <div id='contact' className='min-h-screen bg-[#2E8B57] py-16 px-4 sm:px-6 lg:px-8'>
         <div className='max-w-7xl mx-auto'>
           <motion.h2
             initial={{ opacity: 0, y: -20 }}

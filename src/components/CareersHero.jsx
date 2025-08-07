@@ -27,7 +27,7 @@ const CareersHero = () => {
           data-aos-duration='1000'
           className='text-2xl md:text-2xl max-w-2xl text-left ml-4'
         >
-          Drive Innovation. Power Sustainability. Enable Intelligence.
+          Nurture Potential. Create Together. Shape the Future.
         </p>
         <button
           data-aos='fade-up-left'

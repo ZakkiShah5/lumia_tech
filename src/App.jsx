@@ -9,7 +9,7 @@ import Who from './pages/Who'
 import WhatWeDo from './pages/WhatWeDo'
 import Partners from './pages/Partners'
 import Careers from './pages/Careers'
-import Contact from './components/Contact'
+import ContactPage from './pages/ContactPage'
 
 const App = () => {
   useEffect(() => {
@@ -27,7 +27,7 @@ const App = () => {
         <Route path='/whatwedo' element={<WhatWeDo />} />
         <Route path='/partners' element={<Partners />} />
         <Route path='/careers' element={<Careers />} /> 
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contact' element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>

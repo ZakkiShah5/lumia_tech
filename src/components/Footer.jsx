@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
             <li>
               <Link to='/careers' className='hover:underline'>
-                Careers
+                Careers at Lumia
               </Link>
             </li>
             <li>
