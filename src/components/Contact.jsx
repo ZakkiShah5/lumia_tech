@@ -129,9 +129,9 @@ const Contact = () => {
               <div>
                 <button
                   type='submit'
-                  className='w-full bg-[#2E8B57] uppercase cursor-pointer text-white font-medium py-2 hover:bg-green-700 transition-colors'
+                  className='w-full bg-[#2E8B57] uppercase cursor-pointer text-white font-medium py-2 hover:scale-105 hover:text-gray-50 transition-all duration-300'
                 >
-                  Submit
+                  Connect with Lumia
                 </button>
               </div>
             </motion.form>

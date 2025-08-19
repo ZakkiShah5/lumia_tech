@@ -10,6 +10,7 @@ import WhatWeDo from './pages/WhatWeDo'
 import Partners from './pages/Partners'
 import Careers from './pages/Careers'
 import ContactPage from './pages/ContactPage'
+import BackToTop from './components/BackToTop'
 
 const App = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='/careers' element={<Careers />} /> 
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
+      <BackToTop />
       <Footer />
     </div>
   )

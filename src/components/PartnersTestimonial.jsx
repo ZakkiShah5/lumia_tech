@@ -1,3 +1,9 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import { Autoplay } from 'swiper/modules';
+import { useState } from 'react';
+
 const testimonials = [
   {
     name: 'Anastasia Ivanova',
@@ -14,34 +20,72 @@ const testimonials = [
     title: 'Kazakhstan',
     quote: "The team’s deep understanding of local markets combined with global vision is impressive.",
   },
+  {
+    name: 'Leyla Mammadova',
+    title: 'Azerbaijan',
+    quote: "Lumia’s expertise has helped us enter new markets with confidence. Their clear communication and reliable support make every step smooth.",
+  },
+  {
+    name: 'Martin Schneider',
+    title: 'Switzerland',
+    quote: "Partnering with Lumia has been a game-changer. Their innovative mindset and dedication create outstanding opportunities for growth.",
+  },
+  {
+    name: 'Wendy Zhang',
+    title: 'China',
+    quote: "The Lumia team combines deep industry knowledge with practical solutions. Their professionalism ensures every collaboration achieves real impact.",
+  },
 ];
 
 export default function PartnersTestimonial() {
-  return (
-    <div className="w-full py-16 px-4">
-      <h2 className="after-title text-2xl md:text-4xl uppercase font-semibold text-center mx-auto mb-12 text-gray-800">
-        Voices From Our Partners
-      </h2>
+const [activeIndex, setActiveIndex] = useState(0);
 
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6">
-        {testimonials.map((item, index) => {
-          const isCenter = index === 1; // middle card
-          return (
-            <div
-              key={index}
-              className={`
-                rounded-xl p-6 text-center h-[260px] flex flex-col justify-center mx-2 transition-all duration-500 ease-in-out
-                ${isCenter ? 'bg-[#A3D9A5] scale-105' : 'bg-white scale-95 opacity-70'}
-                w-full md:w-1/3
-              `}
-            >
+  return (
+    <div className="w-full max-w-7xl mx-auto py-16 px-4">
+      <h2 className="after-title text-2xl md:text-4xl uppercase font-semibold text-center mx-auto mb-12 text-gray-800">Voices From Our Team</h2>
+
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={10}
+        centeredSlides={true}
+        loop={true}
+        autoplay={{
+          delay: 5000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        }}
+        grabCursor={true}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        modules={[Autoplay]}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            centeredSlides: false,
+          },
+          768: {
+            slidesPerView: 3,
+            centeredSlides: true,
+          },
+        }}
+        className="max-w-6xl mx-auto"
+      >
+        {testimonials.map((item, index) => (
+          <SwiperSlide
+            key={index}
+            className={`transition-all duration-500 ease-in-out transform ${
+              index === activeIndex
+                ? 'scale-105 bg-[#A3D9A5] blur-0 opacity-100'
+                : 'scale-90 opacity-50 bg-amber-50'
+            }`}
+          >
+            <div className="rounded-xl p-6 text-center h-[260px] flex flex-col justify-center mx-2">
               <p className="text-gray-700 italic mb-4">"{item.quote}"</p>
               <h4 className="text-gray-900 font-semibold">{item.name}</h4>
               <p className="text-gray-500 text-sm">{item.title}</p>
             </div>
-          );
-        })}
-      </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }

@@ -37,7 +37,7 @@ export default function TestimonialCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full py-16 px-4">
+    <div className="w-full max-w-7xl mx-auto py-16 px-4">
       <h2 className="after-title text-2xl md:text-4xl uppercase font-semibold text-center mx-auto mb-12 text-gray-800">Voices From Our Team</h2>
 
       <Swiper
@@ -47,8 +47,10 @@ export default function TestimonialCarousel() {
         loop={true}
         autoplay={{
           delay: 3000,
+          pauseOnMouseEnter: true,
           disableOnInteraction: false,
         }}
+        grabCursor={true}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         modules={[Autoplay]}
         breakpoints={{

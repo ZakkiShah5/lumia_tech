@@ -57,7 +57,7 @@ const ServicesMore = () => {
             alt='futuro'
           />
         </div>
-        <div className='flex-1'>
+        <div className='flex-1/5'>
           <div className='grid md:grid-cols-2 gap-8'>
             {services.map((service, index) => (
               <div
@@ -65,9 +65,9 @@ const ServicesMore = () => {
                 data-aos='zoom-in'
                 data-aos-easing='linear'
                 data-aos-duration='600'
-                className='p-6 border-l-4 border-[#2E8B57] hover:border-black bg-[#A3D9A5] cursor-pointer hover:bg-[#2E8B57] hover:text-white transition-all duration-300 rounded-lg'
+                className='p-6 md:px-2 border-l-4 border-[#2E8B57] hover:border-black bg-[#A3D9A5] cursor-pointer hover:bg-[#2E8B57] hover:text-white transition-all duration-300 rounded-lg'
               >
-                <h3 className='text-xl font-semibold mb-2'>{service.title}</h3>
+                <h3 className='text-xl md:text-[16px] font-bold mb-2'>{service.title}</h3>
                 <p className=''>{service.description}</p>
               </div>
             ))}
