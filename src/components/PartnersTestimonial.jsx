@@ -42,7 +42,7 @@ const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="w-full max-w-7xl mx-auto py-16 px-4">
-      <h2 className="after-title text-2xl md:text-4xl uppercase font-semibold text-center mx-auto mb-12 text-gray-800">Voices From Our Team</h2>
+      <h2 className="after-title text-2xl md:text-4xl uppercase font-semibold text-center mx-auto mb-12 text-gray-800">Voices From Our Partners</h2>
 
       <Swiper
         slidesPerView={3}
